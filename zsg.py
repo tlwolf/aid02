@@ -4,7 +4,7 @@
 """
 
 import pymysql
-
+import time
 #创建链接
 
 db=pymysql.connect(host='localhost',
@@ -12,7 +12,7 @@ db=pymysql.connect(host='localhost',
                    passwd='123456',
                    database='stu',
                    charset='utf8')
-
+sleep(3)
 #创建游标
 cur=db.cursor()
 
